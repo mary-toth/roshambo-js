@@ -4,33 +4,20 @@ function main() {
   let player1Choice = ''
   let player2Choice = ''
 
-  // let player1Rock = document.querySelector('section.player1 button.rock')
-  // let player1Paper = document.querySelector('section.player1 button.paper')
-  // let player1Scissors = document.querySelector(
-  //   'section.player1 button.scissors'
-  // )
-
-  // let player2Rock = document.querySelector('section.player2 button.rock')
-  // let player2Paper = document.querySelector('section.player2 button.paper')
-  // let player2Scissors = document.querySelector(
-  //   'section.player2 button.scissors'
-  // )
-
-  // DRAW FUNCTIONS
-
-  function handleRockClick1(event) {
+  //rock
+  function handlePlayer1Rock(event) {
     player1Choice = 'Rock'
-
-    if (player1Choice === player2Choice) {
-      window.alert(`Draw! Both players chose ${player1Choice}!`)
-      player1Choice = ''
-    } else if (player1Choice == 'Rock' && player2Choice === 'Scissors') {
+    if (player1Choice === 'Rock' && player2Choice === 'Scissors') {
       window.alert(`Player 1 Wins! ${player1Choice} beats ${player2Choice}!`)
+      player1Choice = ''
+      player2Choice = ''
+    } else if (player1Choice === 'Rock' && player2Choice === 'Paper') {
+      window.alert(`Player 2 Wins! ${player2Choice} beats ${player1Choice}!`)
       player1Choice = ''
       player2Choice = ''
     }
   }
-  function handleRockClick2(event) {
+  function handlePlayer2Rock(event) {
     player2Choice = 'Rock'
     if (player2Choice === player1Choice) {
       window.alert(`Draw! Both players chose ${player1Choice}!`)
@@ -38,61 +25,103 @@ function main() {
       player2Choice = ''
     } else if (player1Choice === 'Paper' && player2Choice === 'Rock') {
       window.alert(`Player 1 Wins! ${player1Choice} beats ${player2Choice}!`)
+      player1Choice = ''
+      player2Choice = ''
+    } else if (player2Choice === 'Rock' && player1Choice === 'Scissors') {
+      window.alert(`Player 2 Wins! ${player2Choice} beats ${player1Choice}!`)
+      player1Choice = ''
+      player2Choice = ''
     }
   }
-
-  function handleScissorsClick2(event) {
+  //scissors
+  function handlePlayer1Scissors(event) {
+    player1Choice = 'Scissors'
+    if (player2Choice === 'Paper' && player1Choice === 'Scissors') {
+      window.alert(`Player 1 Wins! ${player1Choice} beats ${player2Choice}!`)
+      player1Choice = ''
+      player2Choice = ''
+    } else if (player1Choice === 'Scissors' && player2Choice === 'Rock') {
+      window.alert(`Player 2 Wins! ${player2Choice} beats ${player1Choice}!`)
+      player1Choice = ''
+      player2Choice = ''
+    }
+  }
+  function handlePlayer2Scissors(event) {
     player2Choice = 'Scissors'
-    if (player2Choice === 'Scissors' && player1Choice === 'Rock') {
+    if (player2Choice === player1Choice) {
+      window.alert(`Draw! Both players chose ${player2Choice}!`)
+      player1Choice = ''
+      player2Choice = ''
+    } else if (player2Choice === 'Scissors' && player1Choice === 'Rock') {
       window.alert(`Player 1 Wins! ${player1Choice} beats ${player2Choice}!`)
       player1Choice = ''
       player2Choice = ''
     } else if (player2Choice === 'Scissors' && player1Choice === 'Paper') {
-      window.alert(`Player 1 Wins! ${player1Choice} beats ${player2Choice}!`)
+      window.alert(`Player 2 Wins! ${player2Choice} beats ${player1Choice}!`)
       player1Choice = ''
       player2Choice = ''
     }
   }
-  function handlePaperClick1(event) {
+  // paper
+
+  function handlePlayer1Paper(event) {
     player1Choice = 'Paper'
     if (player1Choice === 'Paper' && player2Choice === 'Rock') {
       window.alert(`Player 1 Wins! ${player1Choice} beats ${player2Choice}!`)
       player1Choice = ''
       player2Choice = ''
     } else if (player1Choice === 'Paper' && player2Choice === 'Scissors') {
+      window.alert(`Player 2 Wins! ${player2Choice} beats ${player1Choice}!`)
+      player1Choice = ''
+      player2Choice = ''
+    }
+  }
+  function handlePlayer2Paper(event) {
+    player2Choice = 'Paper'
+    if (player1Choice === player2Choice) {
+      window.alert(`Draw! Both players chose ${player1Choice}!`)
+      player1Choice = ''
+      player2Choice = ''
+    } else if (player2Choice === 'Paper' && player1Choice === 'Scissors') {
       window.alert(`Player 1 Wins! ${player1Choice} beats ${player2Choice}!`)
+      player1Choice = ''
+      player2Choice = ''
+    } else if (player2Choice === 'Paper' && player1Choice === 'Rock') {
+      window.alert(`Player 2 Wins! ${player2Choice} beats ${player1Choice}!`)
       player1Choice = ''
       player2Choice = ''
     }
   }
 
-  //if you click on P1 ROCK:
+  //if you click on P1 rock:
   document
     .querySelector('section.player1 button.rock')
-    .addEventListener('click', handleRockClick1)
+    .addEventListener('click', handlePlayer1Rock)
 
-  //if you click on P2 ROCK:
+  //if you click on P2 rock:
   document
     .querySelector('section.player2 button.rock')
-    .addEventListener('click', handleRockClick2)
+    .addEventListener('click', handlePlayer2Rock)
 
-  //if you click on P2 Scissors:
+  //if you click on p1 scissors:
+  document
+    .querySelector('section.player1 button.scissors')
+    .addEventListener('click', handlePlayer1Scissors)
+
+  //if you click on P2 scissors:
   document
     .querySelector('section.player2 button.scissors')
-    .addEventListener('click', handleScissorsClick2)
+    .addEventListener('click', handlePlayer2Scissors)
 
   //if you click on p1 paper:
   document
     .querySelector('section.player1 button.paper')
-    .addEventListener('click', handlePaperClick1)
-}
+    .addEventListener('click', handlePlayer1Paper)
 
-//else if (p1 === 'paper' && p2 === 'rock') {
-//   return `Player 1 won!`;
-// } else if (p1 === 'scissors' && p2 === 'paper') {
-//   return `Player 1 won!`;
-// } else {
-//   return `Player 2 won!`;
-// }
+  //if you click on p2 paper:
+  document
+    .querySelector('section.player2 button.paper')
+    .addEventListener('click', handlePlayer2Paper)
+}
 
 document.addEventListener('DOMContentLoaded', main)
