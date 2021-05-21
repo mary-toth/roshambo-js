@@ -1,5 +1,6 @@
 :root {
   font: 16px / 1 sans-serif;
+  font-family: Josefin Sans;
 }
 
 html {
@@ -29,22 +30,40 @@ section {
   margin-top: 40px;
   text-align: center;
   background-color: rgb(247, 245, 241);
-  border-radius: 7rem;
   border: thin solid rgb(235, 235, 235);
+}
+section.player1 {
+  border-radius: 4rem;
+  padding-top: 3rem;
+}
+section.player2 {
+  border-radius: 4rem;
+}
+h1 {
+  color: rgb(145, 144, 144);
 }
 section h2 {
   margin-top: 1px;
-  margin-bottom: 50px;
-  color: rgb(134, 130, 130);
+  margin-bottom: 1rem;
+  color: rgb(83, 83, 83);
 }
 fieldset {
   border-radius: 1rem;
 }
 button {
   background-color: rgb(255, 255, 255);
-  border-radius: 1rem;
+  border-radius: 9px;
   border: thin solid;
   color: rgb(109, 109, 109);
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 9px;
+  padding-right: 9px;
+  font-family: Josefin Sans;
+  cursor: pointer;
+}
+button:hover {
+  color: rgb(156, 156, 156);
 }
 h3 {
   border: thin solid;
@@ -69,6 +88,6 @@ footer {
   padding-top: 40px;
 }
 footer .mary {
-  color: rgb(145, 144, 144);
+  color: rgb(180, 179, 179);
   margin-left: 30px;
 }
