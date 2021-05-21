@@ -4,7 +4,7 @@ function main() {
   let player1Choice = ''
   let player2Choice = ''
 
-  let displayMessage = document.querySelector('h1')
+  let displayMessage = ''
 
   //rock
   function handlePlayer1Rock(event) {
@@ -29,13 +29,11 @@ function main() {
   //scissors
   function handlePlayer1Scissors(event) {
     player1Choice = 'Scissors'
-    displayMessage = '0'
   }
   function handlePlayer2Scissors(event) {
     player2Choice = 'Scissors'
     if (player2Choice === player1Choice) {
       window.alert(`Draw! Both players chose ${player2Choice}!`)
-      displayMessage.textContent = 'DRAW'
       player1Choice = ''
       player2Choice = ''
     } else if (player2Choice === 'Scissors' && player1Choice === 'Rock') {
@@ -70,6 +68,31 @@ function main() {
     }
   }
 
+  //lizard
+  function handlePlayer1Lizard(event) {
+    player1Choice = 'Lizard'
+  }
+
+  function handlePlayer2Lizard(event) {
+    player2Choice = 'Lizard'
+    if (player2Choice === player1Choice) {
+      window.alert(`Draw! Both players chose ${player2Choice}!`)
+    }
+  }
+
+  //spock
+  function handlePlayer1Spock(event) {
+    player1Choice = 'Spock'
+  }
+  function handlePlayer2Spock(event) {
+    player2Choice = 'Spock'
+    if (player2Choice === player1Choice) {
+      window.alert(`Draw! Both players chose ${player2Choice}!`)
+    }
+  }
+
+  //event listeners:
+
   //if you click on P1 rock:
   document
     .querySelector('section.player1 button.rock')
@@ -99,6 +122,26 @@ function main() {
   document
     .querySelector('section.player2 button.paper')
     .addEventListener('click', handlePlayer2Paper)
+
+  //if you click on p1 lizard:
+  document
+    .querySelector('section.player1 button.lizard')
+    .addEventListener('click', handlePlayer1Lizard)
+
+  //if you click on p2 lizard:
+  document
+    .querySelector('section.player2 button.lizard')
+    .addEventListener('click', handlePlayer2Lizard)
+
+  //if you click on p1 spock:
+  document
+    .querySelector('section.player1 button.spock')
+    .addEventListener('click', handlePlayer1Spock)
+
+  //if you click on p2 spock:
+  document
+    .querySelector('section.player2 button.spock')
+    .addEventListener('click', handlePlayer2Spock)
 }
 
 document.addEventListener('DOMContentLoaded', main)
