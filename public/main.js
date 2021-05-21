@@ -178,10 +178,13 @@ function main() {
 
   function resetGameClick(event) {
     let displayMessage = document.querySelector('h2.results')
-    displayMessage.textContent = null
+    displayMessage.textContent = ''
   }
 
   //event listeners:
+  document
+    .querySelector('button.reset')
+    .addEventListener('click', resetGameClick)
 
   //if you click on P1 rock:
   document
