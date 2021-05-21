@@ -4,18 +4,11 @@ function main() {
   let player1Choice = ''
   let player2Choice = ''
 
+  let displayMessage = document.querySelector('h1')
+
   //rock
   function handlePlayer1Rock(event) {
     player1Choice = 'Rock'
-    if (player1Choice === 'Rock' && player2Choice === 'Scissors') {
-      window.alert(`Player 1 Wins! ${player1Choice} beats ${player2Choice}!`)
-      player1Choice = ''
-      player2Choice = ''
-    } else if (player1Choice === 'Rock' && player2Choice === 'Paper') {
-      window.alert(`Player 2 Wins! ${player2Choice} beats ${player1Choice}!`)
-      player1Choice = ''
-      player2Choice = ''
-    }
   }
   function handlePlayer2Rock(event) {
     player2Choice = 'Rock'
@@ -36,20 +29,13 @@ function main() {
   //scissors
   function handlePlayer1Scissors(event) {
     player1Choice = 'Scissors'
-    if (player2Choice === 'Paper' && player1Choice === 'Scissors') {
-      window.alert(`Player 1 Wins! ${player1Choice} beats ${player2Choice}!`)
-      player1Choice = ''
-      player2Choice = ''
-    } else if (player1Choice === 'Scissors' && player2Choice === 'Rock') {
-      window.alert(`Player 2 Wins! ${player2Choice} beats ${player1Choice}!`)
-      player1Choice = ''
-      player2Choice = ''
-    }
+    displayMessage = '0'
   }
   function handlePlayer2Scissors(event) {
     player2Choice = 'Scissors'
     if (player2Choice === player1Choice) {
       window.alert(`Draw! Both players chose ${player2Choice}!`)
+      displayMessage.textContent = 'DRAW'
       player1Choice = ''
       player2Choice = ''
     } else if (player2Choice === 'Scissors' && player1Choice === 'Rock') {
@@ -66,15 +52,6 @@ function main() {
 
   function handlePlayer1Paper(event) {
     player1Choice = 'Paper'
-    if (player1Choice === 'Paper' && player2Choice === 'Rock') {
-      window.alert(`Player 1 Wins! ${player1Choice} beats ${player2Choice}!`)
-      player1Choice = ''
-      player2Choice = ''
-    } else if (player1Choice === 'Paper' && player2Choice === 'Scissors') {
-      window.alert(`Player 2 Wins! ${player2Choice} beats ${player1Choice}!`)
-      player1Choice = ''
-      player2Choice = ''
-    }
   }
   function handlePlayer2Paper(event) {
     player2Choice = 'Paper'
