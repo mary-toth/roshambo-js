@@ -1,6 +1,6 @@
 :root {
   font: 16px / 1 sans-serif;
-  font-family: Josefin Sans;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 html {
@@ -76,6 +76,7 @@ fieldset {
   width: 100px;
   height: 60px;
   font-size: 18px;
+  font-family: 'Josefin Sans', sans-serif;
 }
 .player2 button {
   background-color: rgb(255, 255, 255);
@@ -92,6 +93,7 @@ fieldset {
   width: 100px;
   height: 60px;
   font-size: 18px;
+  font-family: 'Josefin Sans', sans-serif;
 }
 button:hover {
   background-color: rgb(202, 207, 193);
@@ -131,7 +133,7 @@ button.reset {
   align-self: center;
   margin-right: 2rem;
   margin-bottom: 4rem;
-  font-family: Josefin Sans;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 20px;
   color: rgb(114, 114, 114);
   cursor: pointer;
