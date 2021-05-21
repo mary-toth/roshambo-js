@@ -88,10 +88,17 @@ p {
   width: 100%;
   padding-top: 40px;
 } */
-footer .mary {
+/* footer .mary {
   color: rgb(180, 179, 179);
   margin-left: 30px;
-}
+} */
 
-h1 {
+.resultbox {
+  display: flex;
+  justify-content: center;
+}
+.results {
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 5px;
 }
