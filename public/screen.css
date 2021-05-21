@@ -23,22 +23,20 @@ main {
   justify-content: space-evenly;
 }
 section {
-  border: thin solid;
   padding: 3rem;
   padding-right: 4rem;
   padding-left: 4rem;
-  margin-top: 40px;
   text-align: center;
   background-color: rgb(247, 245, 241);
   border: thin solid rgb(235, 235, 235);
+  font-size: 20px;
+  margin-bottom: 30px;
 }
-section.player1 {
+
+section {
   border-radius: 4rem;
-  padding-top: 3rem;
 }
-section.player2 {
-  border-radius: 4rem;
-}
+
 h1 {
   color: rgb(145, 144, 144);
 }
@@ -61,6 +59,9 @@ button {
   padding-right: 9px;
   font-family: Josefin Sans;
   cursor: pointer;
+  width: 100px;
+  height: 60px;
+  font-size: 18px;
 }
 button:hover {
   color: rgb(156, 156, 156);
@@ -76,7 +77,7 @@ p {
   margin-top: 1px;
 }
 
-footer {
+/* footer {
   display: flex;
   justify-content: space-between;
   border: thin solid rgb(235, 235, 235);
@@ -86,7 +87,7 @@ footer {
   bottom: 0;
   width: 100%;
   padding-top: 40px;
-}
+} */
 footer .mary {
   color: rgb(180, 179, 179);
   margin-left: 30px;
