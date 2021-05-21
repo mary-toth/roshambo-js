@@ -21,6 +21,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  flex-direction: column;
 }
 section.player1 {
   padding: 3rem;
@@ -31,7 +32,8 @@ section.player1 {
   background-color: rgb(247, 245, 241);
   border: thin solid rgb(235, 235, 235);
   font-size: 20px;
-  margin-bottom: 30px;
+  align-self: center;
+  width: 600px;
 }
 section.player2 {
   padding: 3rem;
@@ -42,7 +44,9 @@ section.player2 {
   background-color: rgb(247, 245, 241);
   border: thin solid rgb(235, 235, 235);
   font-size: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 1rem;
+  align-self: center;
+  width: 600px;
 }
 
 h1 {
@@ -56,7 +60,23 @@ section h2 {
 fieldset {
   border-radius: 1rem;
 }
-button {
+.player1 button {
+  background-color: rgb(255, 255, 255);
+  border-radius: 9px;
+  border: thin solid;
+  border-color: rgb(206, 205, 205);
+  color: rgb(109, 109, 109);
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 9px;
+  padding-right: 9px;
+  font-family: Josefin Sans;
+  cursor: pointer;
+  width: 100px;
+  height: 60px;
+  font-size: 18px;
+}
+.player2 button {
   background-color: rgb(255, 255, 255);
   border-radius: 9px;
   border: thin solid;
@@ -111,22 +131,51 @@ button.reset {
 } */
 
 .resultbox {
-  margin-top: 14rem;
+  /* margin-top: 14rem; */
   display: flex;
-  position: absolute;
+  flex-direction: column;
+  /* position: absolute; */
 }
 .results {
-  display: flex;
+  align-self: center;
   margin-top: 1rem;
-  margin-bottom: 5px;
+  /* display: flex;
+  margin-top: 1rem;
+  margin-bottom: 5px; */
 }
 
 .reset {
+  border: thin solid;
+  background-color: rgb(255, 255, 255);
+  border-radius: 9px;
+  align-self: center;
   margin-right: 2rem;
+  margin-bottom: 2rem;
+  font-family: Josefin Sans;
+  font-size: 20px;
+  color: rgb(83, 83, 83);
+  cursor: pointer;
 }
 /* on screens that are 1320px or less but bigger than ,  */
-@media all and (max-width: 1320px) {
+/* @media all and (max-width: 1320px) {
   .resultbox {
     margin-top: 30rem;
-  }
-}
+    margin-bottom: 30rem;
+  } */
+
+/* .player1 button {
+    background-color: rgb(255, 255, 255);
+    border-radius: 9px;
+    border: thin solid;
+    border-color: rgb(206, 205, 205);
+    color: rgb(109, 109, 109);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 9px;
+    padding-right: 9px;
+    font-family: Josefin Sans;
+    cursor: pointer;
+    width: 100px;
+    height: 60px;
+    font-size: 18px;
+  } */

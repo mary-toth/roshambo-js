@@ -179,6 +179,8 @@ function main() {
   function resetGameClick(event) {
     let displayMessage = document.querySelector('h2.results')
     displayMessage.textContent = ''
+    player1Choice = ''
+    player2Choice = ''
   }
 
   //event listeners:
