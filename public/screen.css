@@ -22,19 +22,27 @@ main {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-section {
+section.player1 {
   padding: 3rem;
   padding-right: 4rem;
   padding-left: 4rem;
   text-align: center;
+  border-radius: 4rem;
   background-color: rgb(247, 245, 241);
   border: thin solid rgb(235, 235, 235);
   font-size: 20px;
   margin-bottom: 30px;
 }
-
-section {
+section.player2 {
+  padding: 3rem;
+  padding-right: 4rem;
+  padding-left: 4rem;
+  text-align: center;
   border-radius: 4rem;
+  background-color: rgb(247, 245, 241);
+  border: thin solid rgb(235, 235, 235);
+  font-size: 20px;
+  margin-bottom: 30px;
 }
 
 h1 {
@@ -105,13 +113,16 @@ button.reset {
 .resultbox {
   margin-top: 14rem;
   display: flex;
-  justify-content: center;
   position: absolute;
 }
 .results {
   display: flex;
   margin-top: 1rem;
   margin-bottom: 5px;
+}
+
+.reset {
+  margin-right: 2rem;
 }
 /* on screens that are 1320px or less but bigger than ,  */
 @media all and (max-width: 1320px) {
