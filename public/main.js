@@ -13,27 +13,22 @@ function main() {
   function handlePlayer2Rock(event) {
     player2Choice = 'Rock'
     if (player2Choice === player1Choice) {
-      // window.alert(`Draw! Both players chose ${player1Choice}!`)
       displayMessage.textContent = `Draw! Both players chose ${player1Choice}!`
       player1Choice = ''
       player2Choice = ''
     } else if (player1Choice === 'Paper' && player2Choice === 'Rock') {
-      // window.alert(`Player 1 wins! Paper covers Rock.`)
       displayMessage.textContent = `Player 1 wins! Paper covers Rock.`
       player1Choice = ''
       player2Choice = ''
     } else if (player2Choice === 'Rock' && player1Choice === 'Scissors') {
-      // window.alert(`Player 2 wins! Rock crushes Scissors.`)
       displayMessage.textContent = `Player 2 wins! Rock crushes Scissors.`
       player1Choice = ''
       player2Choice = ''
     } else if (player2Choice === 'Rock' && player1Choice === 'Lizard') {
-      // window.alert(`Player 2 wins! Rock crushes Lizard.`)
       displayMessage.textContent = `Player 2 wins! Rock crushes Lizard.`
       player1Choice = ''
       player2Choice = ''
     } else if (player2Choice === 'Rock' && player1Choice === 'Spock') {
-      // window.alert(`Player 1 wins! Spock vaporizes Rock.`)
       displayMessage.textContent = `Player 1 wins! Spock vaporizes Rock.`
       player1Choice = ''
       player2Choice = ''
@@ -46,27 +41,22 @@ function main() {
   function handlePlayer2Scissors(event) {
     player2Choice = 'Scissors'
     if (player2Choice === player1Choice) {
-      // window.alert(`Draw! Both players chose ${player2Choice}!`)
       displayMessage.textContent = `Draw! Both players chose ${player2Choice}!`
       player1Choice = ''
       player2Choice = ''
     } else if (player2Choice === 'Scissors' && player1Choice === 'Rock') {
-      // window.alert(`Player 1 wins! Rock crushes Scissors.`)
       displayMessage.textContent = `Player 1 wins! Rock crushes Scissors.`
       player1Choice = ''
       player2Choice = ''
     } else if (player2Choice === 'Scissors' && player1Choice === 'Paper') {
-      // window.alert(`Player 2 wins! Scissors cuts Paper.`)
       displayMessage.textContent = `Player 2 wins! Scissors cuts Paper.`
       player1Choice = ''
       player2Choice = ''
     } else if (player2Choice === 'Scissors' && player1Choice === 'Spock') {
-      // window.alert(`Player 1 wins! Spock crushes Scissors.`)
       displayMessage.textContent = `Player 1 wins! Spock crushes Scissors.`
       player1Choice = ''
       player2Choice = ''
     } else if (player2Choice === 'Scissors' && player1Choice === 'Lizard') {
-      // window.alert(`Player 2 wins! Scissors decapitates Lizard.`)
       displayMessage.textContent = `Player 2 wins! Scissors decapitates Lizard.`
       player1Choice = ''
       player2Choice = ''
@@ -80,27 +70,22 @@ function main() {
   function handlePlayer2Paper(event) {
     player2Choice = 'Paper'
     if (player1Choice === player2Choice) {
-      // window.alert(`Draw! Both players chose ${player1Choice}!`)
       displayMessage.textContent = `Draw! Both players chose ${player1Choice}!`
       player1Choice = ''
       player2Choice = ''
     } else if (player2Choice === 'Paper' && player1Choice === 'Scissors') {
-      // window.alert(`Player 1 wins! Scissors cuts Paper.`)
       displayMessage.textContent = `Player 1 wins! Scissors cuts Paper.`
       player1Choice = ''
       player2Choice = ''
     } else if (player2Choice === 'Paper' && player1Choice === 'Rock') {
-      // window.alert(`Player 2 wins! Paper covers Rock.`)
       displayMessage.textContent = `Player 2 wins! Paper covers Rock.`
       player1Choice = ''
       player2Choice = ''
     } else if (player2Choice === 'Paper' && player1Choice === 'Lizard') {
-      // window.alert(`Player 1 wins! Lizard eats Paper.`)
       displayMessage.textContent = `Player 1 wins! Lizard eats Paper.`
       player1Choice = ''
       player2Choice = ''
     } else if (player2Choice === 'Paper' && player1Choice === 'Spock') {
-      // window.alert(`Player 2 wins! Paper disproves Spock.`)
       displayMessage.textContent = `Player 2 wins! Paper disproves Spock.`
       player1Choice = ''
       player2Choice = ''
@@ -115,27 +100,22 @@ function main() {
   function handlePlayer2Lizard(event) {
     player2Choice = 'Lizard'
     if (player2Choice === player1Choice) {
-      // window.alert(`Draw! Both players chose ${player2Choice}!`)
       displayMessage.textContent = `Draw! Both players chose ${player2Choice}!`
       player1Choice = ''
       player2Choice = ''
     } else if (player2Choice === 'Lizard' && player1Choice === 'Rock') {
-      // window.alert(`Player 1 wins! Rock crushes Lizard.`)
       displayMessage.textContent = `Player 1 wins! Rock crushes Lizard.`
       player1Choice = ''
       player2Choice = ''
     } else if (player2Choice === 'Lizard' && player1Choice === 'Spock') {
-      // window.alert(`Player 2 wins! Lizard poisons Spock.`)
       displayMessage.textContent = `Player 2 wins! Lizard poisons Spock.`
       player1Choice = ''
       player2Choice = ''
     } else if (player2Choice === 'Lizard' && player1Choice === 'Scissors') {
-      // window.alert(`Player 1 wins! Scissors decapitates Lizard.`)
       displayMessage.textContent = `Player 1 wins! Scissors decapitates Lizard.`
       player1Choice = ''
       player2Choice = ''
     } else if (player2Choice === 'Lizard' && player1Choice === 'Paper') {
-      // window.alert(`Player 2 wins! Lizard eats Paper.`)
       displayMessage.textContent = `Player 2 wins! Lizard eats Paper.`
       player1Choice = ''
       player2Choice = ''
@@ -149,27 +129,22 @@ function main() {
   function handlePlayer2Spock(event) {
     player2Choice = 'Spock'
     if (player2Choice === player1Choice) {
-      // window.alert(`Draw! Both players chose ${player2Choice}!`)
       displayMessage.textContent = `Draw! Both players chose ${player2Choice}!`
       player1Choice = ''
       player2Choice = ''
     } else if (player2Choice === 'Spock' && player1Choice === 'Lizard') {
-      // window.alert(`Player 1 wins! Lizard poisons Spock!`)
       displayMessage.textContent = `Player 1 wins! Lizard poisons Spock!`
       player1Choice = ''
       player2Choice = ''
     } else if (player2Choice === 'Spock' && player1Choice === 'Scissors') {
-      // window.alert(`Player 2 wins! Spock smashes Scissors!`)
       displayMessage.textContent = `Player 2 wins! Spock smashes Scissors!`
       player1Choice = ''
       player2Choice = ''
     } else if (player2Choice === 'Spock' && player1Choice === 'Paper') {
-      // window.alert(`Player 1 wins! Paper disproves Spock!`)
       displayMessage.textContent = `Player 1 wins! Paper disproves Spock!`
       player1Choice = ''
       player2Choice = ''
     } else if (player2Choice === 'Spock' && player1Choice === 'Rock') {
-      // window.alert(`Player 2 wins! Spock vaporizes Rock.`)
       displayMessage.textContent = `Player 2 wins! Spock vaporizes Rock.`
       player1Choice = ''
       player2Choice = ''

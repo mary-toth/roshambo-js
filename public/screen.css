@@ -15,6 +15,7 @@ header {
   text-align: center;
   margin-bottom: 2rem;
   background-color: rgb(247, 245, 241);
+  border: thin solid rgb(235, 235, 235);
 }
 
 main {
@@ -25,6 +26,7 @@ main {
 }
 section.player1 {
   padding: 3rem;
+  padding-top: 1.6rem;
   padding-right: 4rem;
   padding-left: 4rem;
   text-align: center;
@@ -33,10 +35,12 @@ section.player1 {
   border: thin solid rgb(235, 235, 235);
   font-size: 20px;
   align-self: center;
-  width: 600px;
+  width: 530px;
+  height: 80px;
 }
 section.player2 {
   padding: 3rem;
+  padding-top: 1.6rem;
   padding-right: 4rem;
   padding-left: 4rem;
   text-align: center;
@@ -46,13 +50,10 @@ section.player2 {
   font-size: 20px;
   margin-bottom: 1rem;
   align-self: center;
-  width: 600px;
+  width: 530px;
+  height: 80px;
 }
-
-h1 {
-  color: rgb(145, 144, 144);
-}
-section h2 {
+h2 {
   margin-top: 1px;
   margin-bottom: 1rem;
   color: rgb(83, 83, 83);
@@ -93,8 +94,7 @@ fieldset {
   font-size: 18px;
 }
 button:hover {
-  /* color: rgb(156, 156, 156); */
-  background-color: rgb(230, 227, 227);
+  background-color: rgb(202, 207, 193);
 }
 h3 {
   border: thin solid;
@@ -114,34 +114,14 @@ button.reset {
   height: 50px;
 }
 
-/* footer {
-  display: flex;
-  justify-content: space-between;
-  border: thin solid rgb(235, 235, 235);
-  position: fixed;
-  background-color: rgb(247, 245, 241);
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  padding-top: 40px;
-} */
-/* footer .mary {
-  color: rgb(180, 179, 179);
-  margin-left: 30px;
-} */
-
 .resultbox {
-  /* margin-top: 14rem; */
   display: flex;
   flex-direction: column;
-  /* position: absolute; */
 }
 .results {
   align-self: center;
-  margin-top: 1rem;
-  /* display: flex;
-  margin-top: 1rem;
-  margin-bottom: 5px; */
+  margin-top: 20px;
+  color: rgb(144, 151, 132);
 }
 
 .reset {
@@ -150,32 +130,22 @@ button.reset {
   border-radius: 9px;
   align-self: center;
   margin-right: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   font-family: Josefin Sans;
   font-size: 20px;
-  color: rgb(83, 83, 83);
+  color: rgb(114, 114, 114);
   cursor: pointer;
 }
-/* on screens that are 1320px or less but bigger than ,  */
-/* @media all and (max-width: 1320px) {
-  .resultbox {
-    margin-top: 30rem;
-    margin-bottom: 30rem;
-  } */
-
-/* .player1 button {
-    background-color: rgb(255, 255, 255);
-    border-radius: 9px;
-    border: thin solid;
-    border-color: rgb(206, 205, 205);
-    color: rgb(109, 109, 109);
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 9px;
-    padding-right: 9px;
-    font-family: Josefin Sans;
-    cursor: pointer;
-    width: 100px;
-    height: 60px;
-    font-size: 18px;
-  } */
+@media all and (max-width: 715px) {
+  section.player1 {
+    width: 300px;
+    height: 200px;
+  }
+  section.player2 {
+    width: 300px;
+    height: 200px;
+  }
+  img {
+    width: 400px;
+  }
+}
